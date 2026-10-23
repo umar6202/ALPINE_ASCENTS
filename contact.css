@@ -1,0 +1,293 @@
+:root {
+--contact-bg-dark: rgba(3, 12, 24, 0.96);
+--contact-bg-deep: rgba(7, 24, 42, 0.9);
+--contact-card-bg: rgba(255, 255, 255, 0.07);
+--contact-card-border: rgba(255, 255, 255, 0.16);
+--contact-text: #ffffff;
+--contact-text-soft: #b8c8d9;
+--contact-text-muted: #aebfd1;
+--contact-accent: #83c9ff;
+--contact-accent-soft: rgba(131, 201, 255, 0.14);
+--contact-input-bg: rgba(3, 14, 28, 0.65);
+--contact-input-border: rgba(255, 255, 255, 0.14);
+}
+
+.contact-section {
+min-height: 100vh;
+padding: 90px 5%;
+background:
+    linear-gradient(135deg,
+        var(--contact-bg-dark),
+        var(--contact-bg-deep)),
+    url("material/main-mountain.png") center/cover no-repeat;
+color: var(--contact-text);
+}
+
+.contact-container {
+max-width: 1200px;
+margin: 0 auto;
+align-items: center;
+position: relative;
+z-index: 1;
+}
+
+.contact-info {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+/* ==============================
+   LEFT CONTENT
+============================== */
+.contact-tag {
+display: inline-block;
+color: var(--contact-accent);
+letter-spacing: 4px;
+font-size: 12px;
+font-weight: 700;
+margin-bottom: 18px;
+text-transform: uppercase;
+}
+
+.contact-info h2 {
+font-size: clamp(2.2rem, 4vw, 3.5rem);
+line-height: 1.12;
+margin: 0 0 16px;
+font-weight: 700;
+}
+
+.contact-info h2 span {
+color: var(--contact-accent);
+}
+
+.contact-info > p {
+color: var(--contact-text-soft);
+line-height: 1.7;
+margin: 0 0 24px;
+font-size: 15px;
+}
+
+/* ==============================
+   GOOGLE MAP
+============================== */
+.contact-map {
+width: 100%;
+height: 280px;
+overflow: hidden;
+border-radius: 20px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.contact-map iframe {
+width: 100%;
+height: 100%;
+border: none;
+display: block;
+filter: grayscale(25%);
+}
+
+.map-label {
+margin-top: 15px;
+color: #dcecff;
+font-size: 14px;
+margin-bottom: 0;
+}
+
+.map-label i {
+color: var(--contact-accent);
+margin-right: 8px;
+}
+
+/* ==============================
+   GLASSMORPHISM FORM
+============================== */
+.contact-form {
+width: 100%;
+padding: 38px;
+border-radius: 25px;
+background: var(--contact-card-bg);
+border: 1px solid var(--contact-card-border);
+backdrop-filter: blur(18px);
+-webkit-backdrop-filter: blur(18px);
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h3 {
+font-size: 30px;
+margin-bottom: 8px;
+color: var(--contact-text);
+}
+
+.form-subtitle {
+color: var(--contact-text-muted);
+margin-bottom: 28px;
+font-size: 14px;
+}
+
+/* First Name + Last Name */
+.name-fields .form-group {
+margin-bottom: 0;
+}
+
+/* Input groups */
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group > label {
+display: block;
+margin-bottom: 9px;
+color: #e6f2ff;
+font-size: 14px;
+font-weight: 500;
+}
+
+.form-group input:not([type="radio"]),
+.form-group textarea,
+.form-group select {
+display: block;
+width: 100%;
+padding: 14px 15px;
+border-radius: 12px;
+border: 1px solid var(--contact-input-border);
+outline: none;
+background: var(--contact-input-bg);
+color: var(--contact-text);
+font-family: inherit;
+font-size: 14px;
+transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+color: #8294a8;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus,
+.form-group input:focus-visible,
+.form-group textarea:focus-visible,
+.form-group select:focus-visible {
+border-color: var(--contact-accent);
+box-shadow: 0 0 0 3px var(--contact-accent-soft);
+outline: none;
+}
+
+/* ==============================
+   GENDER OPTIONS
+============================== */
+.gender-options {
+display: flex;
+flex-wrap: wrap;
+gap: 18px;
+color: #dce8f5;
+font-size: 14px;
+}
+
+.gender-options label {
+display: flex;
+align-items: center;
+gap: 7px;
+cursor: pointer;
+}
+
+.gender-options input[type="radio"] {
+accent-color: var(--contact-accent);
+cursor: pointer;
+}
+
+/* ==============================
+   SUBMIT BUTTON
+============================== */
+.contact-submit {
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 30px;
+background: linear-gradient(110deg, #dcefff, var(--contact-accent));
+color: #07111c;
+font-family: inherit;
+font-size: 15px;
+font-weight: 700;
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-submit i {
+margin-left: 8px;
+}
+
+.contact-submit:hover {
+transform: translateY(-3px);
+box-shadow: 0 10px 25px rgba(131, 201, 255, 0.2);
+}
+
+.contact-submit:focus-visible {
+outline: 2px solid #ffffff;
+outline-offset: 3px;
+}
+
+.form-note {
+text-align: center;
+font-size: 12px;
+color: #91a5ba;
+margin-top: 18px;
+margin-bottom: 0;
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+@media (max-width: 850px) {
+.contact-section {
+    padding: 110px 6% 70px;
+}
+
+.contact-info h2 {
+    max-width: 600px;
+}
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+@media (max-width: 480px) {
+.contact-section {
+    padding: 100px 5% 50px;
+}
+
+.contact-form {
+    padding: 25px 18px;
+    border-radius: 20px;
+}
+
+.contact-info h2 {
+    font-size: 2.2rem;
+}
+
+.contact-map {
+    height: 230px;
+}
+
+.gender-options {
+    gap: 13px;
+}
+}
+
+
+
+
+    .records-page .records-timeline {
+        background:
+            linear-gradient(90deg,
+                rgba(7, 17, 28, 0.95),
+                rgba(7, 17, 28, 0.65)),
+            url("material/records-intro.png") center / cover no-repeat !important;
+    }
+
+    .records-page .section-light {
+        background: #0b1926;
+    }

@@ -1,0 +1,2341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ALPINE ASCENTS</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.8 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="web.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="material/logo-img.png" type="image/x-icon" />
+
+  <!-- Put this inside your <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+</head>
+
+<body>
+  <!-- =========================================
+         ALPINE ASCENTS INTRO
+    ========================================= -->
+
+
+
+  <script>
+    if (sessionStorage.getItem("alpineIntroPlayed") === "true") {
+      document.body.classList.add("intro-played");
+    }
+  </script>
+  <div class="intro-screen">
+    <!-- Realistic Falling Snow -->
+    <div class="snow"></div>
+
+    <!-- Center Content -->
+    <div class="intro-content">
+      <div class="intro-top">Mountain Exploration</div>
+
+      <h1 class="intro-title">ALPINE <span>ASCENTS</span></h1>
+
+      <p class="intro-subtitle">Explore • Climb • Ascend</p>
+
+      <div class="intro-bottom">
+        <span></span>
+        <i></i>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+         HERO
+    ===================================================== -->
+
+  <section class="hero" id="Home">
+    <img src="material/hero-img.png" alt="" class="hero-image" />
+
+    <div class="mist" aria-hidden="true">
+      <span class="fog fog--far"></span>
+      <span class="fog fog--mid"></span>
+      <span class="fog fog--near"></span>
+    </div>
+
+    <!-- =====================================================
+     BOOTSTRAP NAVBAR
+===================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-main">
+      <div class="container-fluid navbar-container">
+        <!-- BRAND -->
+
+        <a class="navbar-brand navbar-logo" href="#Home">
+          <img src="material/logo-img.png" alt="" class="logo" />
+
+          ALPINE ASCENTS
+        </a>
+
+        <!-- MOBILE HAMBURGER -->
+        <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon menu-icon"></span>
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
+          <ul class="navbar-nav nav-list">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" aria-current="page" href="#Home">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#About"> About </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#Mountains">
+                Mountains
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="Records.html">
+                Records
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#gallery">
+                Gallery
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="guidelines.html">
+                Guidelines
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- =================================================
+             HERO CONTENT
+        ================================================= -->
+
+    <div class="hero-content">
+      <h1 class="mt-lg-5">
+        BEYOND THE<br />
+        <span>SUMMIT</span>
+      </h1>
+
+      <p>
+        Discover the world's greatest mountains, master the art of climbing,
+        and experience unforgettable adventures above the clouds.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#Mountains" class="hero-btn primary">
+          Explore Mountains
+
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="#About" class="hero-btn secondary"> Discover More </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <strong class="counter"> 8000 </strong>
+
+          <span> Peaks </span>
+        </div>
+
+        <div class="stat-line"></div>
+
+        <div class="stat">
+          <strong class="counter"> 1953 </strong>
+
+          <span> Expeditions </span>
+        </div>
+
+        <div class="stat-line"></div>
+
+        <div class="stat">
+          <strong class="counter"> 50 </strong>
+
+          <span> Locations </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-down">
+      <span> SCROLL TO EXPLORE </span>
+
+      <i class="fa-solid fa-arrow-down"></i>
+    </div>
+  </section>
+
+  <!-- =====================================================
+         ABOUT
+    ===================================================== -->
+
+  <section id="About" class="about-section">
+    <div class="container about-container  align-items-center">
+      <div class="row g-5">
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="col-12 col-lg-6 about-content" data-aos="fade-right">
+          <span class="section-label">
+            <i class="fa-solid fa-mountain"></i>
+
+            ABOUT MOUNTAINEERING
+          </span>
+
+          <h2>
+            WHERE THE
+
+            <span> ADVENTURE </span>
+
+            BEGINS
+          </h2>
+
+          <p class="about-intro">
+            Mountaineering is the art and adventure of climbing mountains while
+            combining physical strength, technical skills, preparation, and
+            determination.
+          </p>
+
+          <p class="about-text">
+            From challenging rock faces to icy high-altitude peaks,
+            mountaineering takes climbers into some of the most extraordinary
+            environments on Earth.
+          </p>
+
+          <a href="#Mountains" class="about-btn">
+            Explore The Journey
+
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+
+        <div class="col-12 col-lg-6 about-visual" data-aos="fade-left">
+          <div class="about-image-card">
+            <img src="material/hero-img.png" alt="Mountaineering Adventure" />
+
+            <div class="image-overlay"></div>
+          </div>
+
+          <div class="about-info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+
+            <div>
+              <strong> Adventure & Exploration </strong>
+
+              <span> Beyond the ordinary </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FACTS -->
+
+    <div class="container about-facts row g-3">
+      <div class="col-6 col-md-3 fact">
+        <strong class="counter"> 8000 </strong>
+
+        <span> Mountain Peaks </span>
+      </div>
+
+      <div class="col-6 col-md-3 fact">
+        <strong class="counter"> 1953 </strong>
+
+        <span> Historic Expeditions </span>
+      </div>
+
+      <div class="col-6 col-md-3 fact">
+        <strong> 4+ </strong>
+
+        <span> Major Climbing Styles </span>
+      </div>
+
+      <div class="col-6 col-md-3 fact">
+        <strong> ∞ </strong>
+
+        <span> Adventures </span>
+      </div>
+    </div>
+  </section>
+
+  <!--       FUTURE SECTIONS   -->
+
+  <!--     MOUNTAINS SECTION -->
+
+  <section class="mountains-section" id="Mountains">
+    <!-- ================= SECTION INTRO ================= -->
+
+    <div class="mountains-heading" data-aos="fade-up">
+      <span class="section-label"> EXPLORE THE MOUNTAINS </span>
+
+      <h2>
+        The World of
+        <span>Mountaineering</span>
+      </h2>
+
+      <p>
+        Discover the history, styles, techniques, sheltering methods and
+        hazards that shape the world of mountaineering.
+      </p>
+    </div>
+
+    <!-- ================= FEATURED MOUNTAIN ================= -->
+
+    <div class="mountain-feature row g-0" data-aos="fade-up">
+      <div class="col-12 col-lg-7 mountain-feature-image">
+        <!-- MAIN MOUNTAIN IMAGE -->
+
+        <img src="material/main-mountain.png" alt="Snow covered mountain peak" />
+
+        <div class="mountain-image-overlay"></div>
+
+        <div class="mountain-image-text">
+          <span> MOUNTAIN EXPLORATION </span>
+
+          <h3>Beyond the Summit</h3>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5 mountain-feature-content">
+        <span class="small-label"> MOUNTAINEERING </span>
+
+        <h3>A Journey Beyond the Ordinary</h3>
+
+        <p>
+          Mountaineering is the sport of attaining, or attempting to attain,
+          high points in mountainous regions. It combines physical challenge,
+          preparation, experience and respect for the mountain environment.
+        </p>
+
+        <p>
+          From historic expeditions to modern climbing techniques, every
+          ascent represents a combination of knowledge, preparation and
+          determination.
+        </p>
+
+        <div class="mountain-feature-stats">
+          <div>
+            <strong>01</strong>
+            <span>History</span>
+          </div>
+
+          <div>
+            <strong>02</strong>
+            <span>Styles</span>
+          </div>
+
+          <div>
+            <strong>03</strong>
+            <span>Techniques</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= HISTORY ================= -->
+
+    <div class="mountain-topic history-topic row align-items-center g-5">
+      <div class="col-12 col-lg-6 topic-image" data-aos="fade-right">
+        <!-- HISTORY IMAGE -->
+
+        <img src="material/history-mountain-img.jpg" alt="Historic mountaineering expedition" />
+
+        <div class="image-number">01</div>
+      </div>
+
+      <div class="col-12 col-lg-6 topic-content" data-aos="fade-left">
+        <span class="section-label"> 01 / HISTORY </span>
+
+        <h3>The History of Mountaineering</h3>
+
+        <p>
+          Mountaineering has developed through generations of exploration and
+          climbing in mountainous regions. Early expeditions gradually
+          developed the skills, knowledge and experience needed to travel
+          through difficult mountain terrain.
+        </p>
+
+        <p>
+          Over time, mountaineering became more organized, with expeditions,
+          climbing communities and established approaches to mountain
+          exploration.
+        </p>
+
+        <div class="topic-highlight">
+          <i class="fa-solid fa-mountain"></i>
+
+          <span> From exploration to modern climbing </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TYPES / STYLES ================= -->
+
+    <div class="mountain-topic reverse-topic row align-items-center g-5">
+      <div class="col-12 col-lg-6 topic-content" data-aos="fade-right">
+        <span class="section-label"> 02 / TYPES & STYLES </span>
+
+        <h3>Different Ways to Climb</h3>
+
+        <p>
+          Mountaineering includes different climbing styles and approaches
+          depending on the terrain, mountain conditions and objectives of an
+          expedition.
+        </p>
+
+        <p>
+          Climbers may encounter rock, snow, ice and mixed terrain. Each
+          environment requires different preparation and techniques.
+        </p>
+
+        <div class="style-list">
+          <div class="style-item">
+            <i class="fa-solid fa-mountain-sun"></i>
+
+            <div>
+              <h4>Rock Climbing</h4>
+
+              <span> Climbing natural rock formations </span>
+            </div>
+          </div>
+
+          <div class="style-item">
+            <i class="fa-solid fa-snowflake"></i>
+
+            <div>
+              <h4>Ice Climbing</h4>
+
+              <span> Climbing snow and frozen terrain </span>
+            </div>
+          </div>
+
+          <div class="style-item">
+            <i class="fa-solid fa-mountain"></i>
+
+            <div>
+              <h4>Alpine Climbing</h4>
+
+              <span> Combining multiple mountain terrains </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 topic-image" data-aos="fade-left">
+        <!-- TYPES / STYLES IMAGE -->
+
+        <img src="material/mountain-climber-img.jfif" alt="Mountaineer climbing a mountain" />
+
+        <div class="image-number">02</div>
+      </div>
+    </div>
+
+    <!-- ================= TECHNIQUES ================= -->
+
+    <div class="mountain-topic row align-items-center g-5">
+      <div class="col-12 col-lg-6 topic-image" data-aos="fade-right">
+        <!-- TECHNIQUES IMAGE -->
+
+        <img src="material/rope-climber-img.avif" alt="Mountaineer using climbing techniques" />
+
+        <div class="image-number">03</div>
+      </div>
+
+      <div class="col-12 col-lg-6 topic-content" data-aos="fade-left">
+        <span class="section-label"> 03 / TECHNIQUES </span>
+
+        <h3>Essential Mountaineering Techniques</h3>
+
+        <p>
+          Mountain climbing requires appropriate techniques for moving safely
+          through challenging terrain. Climbers need to understand the
+          environment and select suitable methods for the conditions.
+        </p>
+
+        <div class="technique-grid row g-3">
+          <div class="col-12 col-sm-6 technique-card">
+            <i class="fa-solid fa-person-hiking"></i>
+
+            <h4>Movement</h4>
+
+            <p>Efficient movement across mountain terrain.</p>
+          </div>
+
+          <div class="col-12 col-sm-6 technique-card">
+            <i class="fa-solid fa-link"></i>
+
+            <h4>Rope Work</h4>
+
+            <p>Rope-based methods used during climbing.</p>
+          </div>
+
+          <div class="col-12 col-sm-6 technique-card">
+            <i class="fa-solid fa-compass"></i>
+
+            <h4>Navigation</h4>
+
+            <p>Understanding routes and mountain surroundings.</p>
+          </div>
+
+          <div class="col-12 col-sm-6 technique-card">
+            <i class="fa-solid fa-person-shelter"></i>
+
+            <h4>Preparation</h4>
+
+            <p>Planning before entering difficult terrain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SHELTERING ================= -->
+
+    <div class="mountain-topic reverse-topic row align-items-center g-5">
+      <div class="col-12 col-lg-6 topic-content" data-aos="fade-right">
+        <span class="section-label"> 04 / SHELTERING </span>
+
+        <h3>Shelter in the Mountains</h3>
+
+        <p>
+          Sheltering is an important part of mountain expeditions. Mountain
+          environments can change quickly, making suitable shelter an
+          essential consideration during an expedition.
+        </p>
+
+        <p>
+          Depending on the environment and expedition, climbers may use
+          established mountain shelters, tents or other suitable forms of
+          protection from the surrounding conditions.
+        </p>
+
+        <div class="shelter-points row g-3">
+          <div class="col-12 col-sm-4">
+            <i class="fa-solid fa-tent"></i>
+            <span>Expedition Tents</span>
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <i class="fa-solid fa-house"></i>
+            <span>Mountain Shelters</span>
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <i class="fa-solid fa-wind"></i>
+            <span>Weather Protection</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 topic-image" data-aos="fade-left">
+        <!-- SHELTER IMAGE -->
+
+        <img src="material/shelter-img.jfif" alt="Mountain expedition shelter" />
+
+        <div class="image-number">04</div>
+      </div>
+    </div>
+
+    <!-- ================= HAZARDS ================= -->
+
+    <div class="hazards-section">
+      <div class="hazards-heading" data-aos="fade-up">
+        <span class="section-label"> 05 / HAZARDS </span>
+
+        <h3>Understanding Mountain Hazards</h3>
+
+        <p>
+          Mountain environments can present serious challenges. Understanding
+          the surrounding conditions is an important part of mountaineering.
+        </p>
+      </div>
+
+      <div class="hazards-grid row g-4">
+        <!-- WEATHER -->
+
+        <div class="col-12 col-sm-6 col-lg-3 hazard-card" data-aos="fade-up" data-aos-delay="100">
+          <!-- HAZARD IMAGE -->
+
+          <img src="material/strom-img.jpeg" alt="Mountain weather conditions" />
+
+          <div class="hazard-overlay"></div>
+
+          <div class="hazard-content">
+            <i class="fa-solid fa-cloud-bolt"></i>
+
+            <h4>Extreme Weather</h4>
+
+            <p>
+              Rapid changes in weather can create challenging mountain
+              conditions.
+            </p>
+          </div>
+        </div>
+
+        <!-- AVALANCHE -->
+
+        <div class="col-12 col-sm-6 col-lg-3 hazard-card" data-aos="fade-up" data-aos-delay="200">
+          <!-- HAZARD IMAGE -->
+
+          <img src="material/avalanche-img.jfif" alt="Snow covered mountain terrain" />
+
+          <div class="hazard-overlay"></div>
+
+          <div class="hazard-content">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <h4>Avalanches</h4>
+
+            <p>
+              Snow movement can create significant hazards in mountainous
+              environments.
+            </p>
+          </div>
+        </div>
+
+        <!-- ALTITUDE -->
+
+        <div class="col-12 col-sm-6 col-lg-3 hazard-card" data-aos="fade-up" data-aos-delay="300">
+          <!-- HAZARD IMAGE -->
+
+          <img src="material/high-altitude-img.jpg" alt="High altitude mountain peak" />
+
+          <div class="hazard-overlay"></div>
+
+          <div class="hazard-content">
+            <i class="fa-solid fa-arrow-up"></i>
+
+            <h4>High Altitude</h4>
+
+            <p>
+              High mountain environments present additional physical
+              challenges.
+            </p>
+          </div>
+        </div>
+
+        <!-- TERRAIN -->
+
+        <div class="col-12 col-sm-6 col-lg-3 hazard-card" data-aos="fade-up" data-aos-delay="400">
+          <!-- HAZARD IMAGE -->
+
+          <img src="material/terrain-img.jpg" alt="Difficult mountain terrain" />
+
+          <div class="hazard-overlay"></div>
+
+          <div class="hazard-content">
+            <i class="fa-solid fa-person-falling"></i>
+
+            <h4>Difficult Terrain</h4>
+
+            <p>
+              Rock, ice, snow and steep terrain can make mountain travel
+              demanding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SECTION END ================= -->
+
+
+
+    <!-- =====================================================
+     MOUNTAINEERING BOOKING SECTION
+===================================================== -->
+
+    <section class="booking-section" id="Book">
+
+      <!-- SECTION HEADING -->
+      <div class="booking-heading" data-aos="fade-up">
+
+        <span class="booking-tag">
+          <i class="fa-solid fa-mountain"></i>
+          EXPLORE & BOOK
+        </span>
+
+        <h2>
+          Choose Your <span>Mountain</span>
+        </h2>
+
+        <p>
+          Explore iconic peaks across Pakistan and around the world.
+          Find your preferred mountain and begin planning your next
+          mountaineering expedition.
+        </p>
+
+      </div>
+
+
+      <!-- SEARCH + FILTER -->
+      <div class="booking-tools" data-aos="fade-up">
+
+        <div class="mountain-search">
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input type="text" id="mountainSearch" placeholder="Search mountain, country or difficulty..." />
+
+        </div>
+
+
+        <div class="mountain-filter d-flex flex-wrap gap-2">
+
+          <button class="filter-btn active" data-filter="all">
+            All Mountains
+          </button>
+
+          <button class="filter-btn" data-filter="pakistan">
+            Pakistan
+          </button>
+
+          <button class="filter-btn" data-filter="international">
+            International
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- MOUNTAIN CARDS -->
+      <div class="mountain-booking-grid row g-4" id="mountainGrid">
+
+
+        <!-- =================================================
+         PAKISTAN
+    ================================================== -->
+
+
+        <!-- 01 K2 -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="K2"
+          data-difficulty="extreme" data-aos="fade-up" data-aos-delay="50">
+
+          <div class="booking-image">
+            <img src="material/k2-card.webp" alt="K2 mountain Pakistan" />
+
+            <span class="booking-country">
+              PAKISTAN
+            </span>
+
+            <span class="difficulty extreme">
+              EXTREME
+            </span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">01</span>
+
+            <h3>K2</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Gilgit-Baltistan, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+
+              <div class="col-6">
+                <strong>8,611m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Expert</strong>
+                <span>Level</span>
+              </div>
+
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('K2')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 02 NANGA PARBAT -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Nanga Parbat"
+          data-difficulty="extreme" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="booking-image">
+
+            <img src="material/nanga-parbat-card.webp" alt="Nanga Parbat Pakistan" />
+
+            <span class="booking-country">
+              PAKISTAN
+            </span>
+
+            <span class="difficulty extreme">
+              EXTREME
+            </span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">02</span>
+
+            <h3>Nanga Parbat</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Gilgit-Baltistan, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+
+              <div class="col-6">
+                <strong>8,126m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Expert</strong>
+                <span>Level</span>
+              </div>
+
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Nanga Parbat')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 03 BROAD PEAK -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Broad Peak"
+          data-difficulty="extreme" data-aos="fade-up" data-aos-delay="150">
+
+          <div class="booking-image">
+
+            <img src="material/broad-peak-card.jfif" alt="Broad Peak Pakistan" />
+
+            <span class="booking-country">PAKISTAN</span>
+            <span class="difficulty extreme">EXTREME</span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">03</span>
+
+            <h3>Broad Peak</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Gilgit-Baltistan, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>8,051m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Expert</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Broad Peak')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 04 GASHERBRUM I -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Gasherbrum I"
+          data-difficulty="extreme" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="booking-image">
+
+            <img src="material/gasherbrum-i-card.jfif" alt="Gasherbrum I Pakistan" />
+
+            <span class="booking-country">PAKISTAN</span>
+            <span class="difficulty extreme">EXTREME</span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">04</span>
+
+            <h3>Gasherbrum I</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Gilgit-Baltistan, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>8,080m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Expert</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Gasherbrum I')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 05 GASHERBRUM II -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Gasherbrum II"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="250">
+
+          <div class="booking-image">
+
+            <img src="material/gasherbrum-ii-card.jfif" alt="Gasherbrum II Pakistan" />
+
+            <span class="booking-country">PAKISTAN</span>
+            <span class="difficulty advanced">ADVANCED</span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">05</span>
+
+            <h3>Gasherbrum II</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Gilgit-Baltistan, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>8,035m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Gasherbrum II')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 06 RAKAPOSHI -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Rakaposhi"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="booking-image">
+
+            <img src="material/rakaposhi-card.jpg" alt="Rakaposhi Pakistan" />
+
+            <span class="booking-country">PAKISTAN</span>
+            <span class="difficulty advanced">ADVANCED</span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">06</span>
+
+            <h3>Rakaposhi</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Gilgit-Baltistan, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>7,788m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Rakaposhi')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 07 TIRICH MIR -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Tirich Mir"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="350">
+
+          <div class="booking-image">
+
+            <img src="material/tirich-mir-card.jfif" alt="Tirich Mir Pakistan" />
+
+            <span class="booking-country">PAKISTAN</span>
+            <span class="difficulty advanced">ADVANCED</span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">07</span>
+
+            <h3>Tirich Mir</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Chitral, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>7,708m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Tirich Mir')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 08 SPANTIK -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Spantik"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="booking-image">
+
+            <img src="material/spantik-card.jfif" alt="Spantik Pakistan" />
+
+            <span class="booking-country">PAKISTAN</span>
+            <span class="difficulty advanced">ADVANCED</span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">08</span>
+
+            <h3>Spantik</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Gilgit-Baltistan, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>7,027m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Spantik')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 09 MALIKA PARBAT -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Malika Parbat"
+          data-difficulty="intermediate" data-aos="fade-up" data-aos-delay="450">
+
+          <div class="booking-image">
+
+            <img src="material/malika-parbat-card.jfif" alt="Malika Parbat Pakistan" />
+
+            <span class="booking-country">PAKISTAN</span>
+            <span class="difficulty intermediate">INTERMEDIATE</span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">09</span>
+
+            <h3>Malika Parbat</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Kaghan Valley, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>5,290m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Intermediate</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Malika Parbat')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 10 ULTAR SAR -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="pakistan" data-name="Ultar Sar"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="150">
+
+          <div class="booking-image">
+
+            <img src="material/ultar-sar-card.webp" alt="Ultar Sar Pakistan" />
+
+            <span class="booking-country">PAKISTAN</span>
+            <span class="difficulty advanced">ADVANCED</span>
+
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">10</span>
+
+            <h3>Ultar Sar</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Hunza, Pakistan
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>7,388m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Ultar Sar')">
+              Book Expedition
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+         INTERNATIONAL
+    ================================================== -->
+
+
+        <!-- 11 EVEREST -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Mount Everest"
+          data-difficulty="extreme" data-aos="fade-up" data-aos-delay="50">
+
+          <div class="booking-image">
+            <img src="material/mount-everest-card.jpg" alt="Mount Everest Nepal">
+
+            <span class="booking-country">NEPAL</span>
+            <span class="difficulty extreme">EXTREME</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">11</span>
+
+            <h3>Mount Everest</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Nepal / Tibet
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>8,849m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Expert</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Mount Everest')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 12 LHOTSE -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Lhotse"
+          data-difficulty="extreme" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="booking-image">
+            <img src="material/lhotse-card.jfif" alt="Lhotse mountain">
+
+            <span class="booking-country">NEPAL</span>
+            <span class="difficulty extreme">EXTREME</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">12</span>
+
+            <h3>Lhotse</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Nepal / Tibet
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>8,516m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Expert</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Lhotse')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 13 MANASLU -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Manaslu"
+          data-difficulty="extreme" data-aos="fade-up" data-aos-delay="150">
+
+          <div class="booking-image">
+            <img src="material/manaslu-card.avif" alt="Manaslu Nepal">
+
+            <span class="booking-country">NEPAL</span>
+            <span class="difficulty extreme">EXTREME</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">13</span>
+
+            <h3>Manaslu</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Nepal
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>8,163m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Expert</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Manaslu')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 14 ANNAPURNA -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Annapurna I"
+          data-difficulty="extreme" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="booking-image">
+            <img src="material/annapurna-card.jpg" alt="Annapurna Nepal">
+
+            <span class="booking-country">NEPAL</span>
+            <span class="difficulty extreme">EXTREME</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">14</span>
+
+            <h3>Annapurna I</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Nepal
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>8,091m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Expert</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Annapurna I')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 15 DENALI -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Denali"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="250">
+
+          <div class="booking-image">
+            <img src="material/denali-card.jpg" alt="Denali Alaska">
+
+            <span class="booking-country">USA</span>
+            <span class="difficulty advanced">ADVANCED</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">15</span>
+
+            <h3>Denali</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Alaska, USA
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>6,190m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Denali')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 16 ACONCAGUA -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Aconcagua"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="booking-image">
+            <img src="material/aconcagua-card.jpg" alt="Aconcagua Argentina">
+
+            <span class="booking-country">ARGENTINA</span>
+            <span class="difficulty advanced">ADVANCED</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">16</span>
+
+            <h3>Aconcagua</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Mendoza, Argentina
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>6,961m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Aconcagua')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 17 MATTERHORN -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Matterhorn"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="350">
+
+          <div class="booking-image">
+            <img src="material/matterhorn-card.jfif" alt="Matterhorn Switzerland">
+
+            <span class="booking-country">SWITZERLAND</span>
+            <span class="difficulty advanced">ADVANCED</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">17</span>
+
+            <h3>Matterhorn</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Switzerland / Italy
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>4,478m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Matterhorn')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 18 MONT BLANC -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Mont Blanc"
+          data-difficulty="intermediate" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="booking-image">
+            <img src="material/mont-blanc-card.jfif" alt="Mont Blanc">
+
+            <span class="booking-country">FRANCE</span>
+            <span class="difficulty intermediate">INTERMEDIATE</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">18</span>
+
+            <h3>Mont Blanc</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              France / Italy
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>4,806m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Intermediate</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Mont Blanc')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 19 ELBRUS -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Mount Elbrus"
+          data-difficulty="intermediate" data-aos="fade-up" data-aos-delay="450">
+
+          <div class="booking-image">
+            <img src="material/elbrus-card.webp" alt="Mount Elbrus Russia">
+
+            <span class="booking-country">RUSSIA</span>
+            <span class="difficulty intermediate">INTERMEDIATE</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">19</span>
+
+            <h3>Mount Elbrus</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Caucasus, Russia
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>5,642m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Intermediate</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Mount Elbrus')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 20 VINSON -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Mount Vinson"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="500">
+
+          <div class="booking-image">
+            <img src="material/vinson-card.webp" alt="Mount Vinson Antarctica">
+
+            <span class="booking-country">ANTARCTICA</span>
+            <span class="difficulty advanced">ADVANCED</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">20</span>
+
+            <h3>Mount Vinson</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Antarctica
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>4,892m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Mount Vinson')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 21 KILIMANJARO -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international"
+          data-name="Mount Kilimanjaro" data-difficulty="intermediate" data-aos="fade-up" data-aos-delay="550">
+
+          <div class="booking-image">
+            <img src="material/kilimanjaro-card.jfif" alt="Mount Kilimanjaro Tanzania">
+
+            <span class="booking-country">TANZANIA</span>
+            <span class="difficulty intermediate">INTERMEDIATE</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">21</span>
+
+            <h3>Mount Kilimanjaro</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Tanzania
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>5,895m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Intermediate</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Mount Kilimanjaro')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 22 AMA DABLAM -->
+        <article class="col-12 col-md-6 col-lg-4 booking-card" data-country="international" data-name="Ama Dablam"
+          data-difficulty="advanced" data-aos="fade-up" data-aos-delay="600">
+
+          <div class="booking-image">
+            <img src="material/ama-dablam-card.jfif" alt="Ama Dablam Nepal">
+
+            <span class="booking-country">NEPAL</span>
+            <span class="difficulty advanced">ADVANCED</span>
+          </div>
+
+          <div class="booking-card-content">
+
+            <span class="mountain-number">22</span>
+
+            <h3>Ama Dablam</h3>
+
+            <p class="booking-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Khumbu, Nepal
+            </p>
+
+            <div class="booking-meta row g-2">
+              <div class="col-6">
+                <strong>6,812m</strong>
+                <span>Elevation</span>
+              </div>
+
+              <div class="col-6">
+                <strong>Advanced</strong>
+                <span>Level</span>
+              </div>
+            </div>
+
+            <button class="book-btn" onclick="bookMountain('Ama Dablam')">
+              Book Expedition
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+
+      <!-- NO RESULTS -->
+      <div class="no-mountains" id="noMountains">
+
+        <i class="fa-solid fa-mountain"></i>
+
+        <h3>No Mountain Found</h3>
+
+        <p>
+          Try searching with another mountain name or country.
+        </p>
+
+      </div>
+
+    </section>
+    <div class="mountains-ending" data-aos="zoom-in">
+      <span> RESPECT THE MOUNTAIN </span>
+
+      <h3>Every Summit Begins With Preparation.</h3>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY SECTION ==================== -->
+ <!-- ==================== GALLERY SECTION ==================== -->
+  <section class="gallery-section" id="gallery">
+    <!-- Section Heading -->
+    <div class="gallery-heading" data-aos="fade-up">
+      <span class="section-tag">EXPLORE THE JOURNEY</span>
+
+      <h2>Mountain <span>Gallery</span></h2>
+
+      <p>
+        Explore the beauty, challenges, techniques and unforgettable moments
+        of mountaineering through our collection of photographs and
+        informative videos.
+      </p>
+    </div>
+
+    <!-- ==================== PHOTO GALLERY ==================== -->
+    <div class="gallery-content">
+      <div class="gallery-subheading" data-aos="fade-up">
+        <span>01</span>
+
+        <div>
+          <h3>Mountaineering in Pictures</h3>
+          <p>
+            Discover breathtaking landscapes, challenging climbs, snowy peaks
+            and the spirit of mountain exploration.
+          </p>
+        </div>
+      </div>
+
+      <!-- Featured Image (Wrapped in Lightbox Anchor) -->
+      <div class="gallery-featured" data-aos="zoom-in">
+        <a href="material/gallery-img-1.jpeg" class="glightbox" data-gallery="mountain-gallery">
+          <div class="gallery-image featured-image">
+            <img src="material/gallery-img-1.jpeg" alt="Mountaineer standing on a snowy summit" />
+
+            <div class="image-overlay">
+              <span>FEATURED</span>
+              <h4>Beyond the Summit</h4>
+              <p>Where determination meets the world's highest peaks.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Image Collection -->
+      <div class="gallery-grid row g-4">
+
+        <!-- Image 01 — Group Snow Climb -->
+        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-aos="fade-up">
+          <a href="material/gallery-img-2.jpeg" class="glightbox" data-gallery="mountain-gallery" data-title="The Ascent" >
+            <img src="material/gallery-img-2.jpeg" alt="Mountaineers climbing a snowy mountain" />
+
+            <div class="gallery-card-info">
+              <span>CLIMBING</span>
+              <h4>The Ascent</h4>
+              <p>A challenging journey toward the summit.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Image 02 — Mountain Landscape -->
+        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-aos="fade-up" data-aos-delay="100">
+          <a href="material/gallery-img-4.jfif" class="glightbox" data-gallery="mountain-gallery" data-title="Frozen Giants" >
+            <img src="material/gallery-img-4.jfif" alt="Snow covered mountain peaks" />
+
+            <div class="gallery-card-info">
+              <span>PEAKS</span>
+              <h4>Frozen Giants</h4>
+              <p>The breathtaking beauty of snow-covered peaks.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Image 03 — Ridge Adventure -->
+        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-aos="fade-up" data-aos-delay="200">
+          <a href="material/gallery-img-5.jpeg" class="glightbox" data-gallery="mountain-gallery" data-title="Into the Wild" data-description="Exploring challenging mountain environments.">
+            <img src="material/gallery-img-5.jpeg" alt="Mountaineers standing on a mountain ridge" />
+
+            <div class="gallery-card-info">
+              <span>ADVENTURE</span>
+              <h4>Into the Wild</h4>
+              <p>Exploring challenging mountain environments.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Image 04 — Rock Climbing -->
+        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-aos="fade-up" data-aos-delay="300">
+          <a href="material/gallery-img-004.jpg" class="glightbox" data-gallery="mountain-gallery" data-title="The Vertical Challenge" data-description="Skill, balance and determination on steep terrain.">
+            <img src="material/gallery-img-004.jpg" alt="Mountaineer climbing a steep rock face" />
+
+            <div class="gallery-card-info">
+              <span>TECHNIQUE</span>
+              <h4>The Vertical Challenge</h4>
+              <p>Skill, balance and determination on steep terrain.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Image 05 — Expedition Team -->
+        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-aos="fade-up" data-aos-delay="400">
+          <a href="material/gallery-img-005.jfif" class="glightbox" data-gallery="mountain-gallery" data-title="United by Mountains" data-description="Teamwork is at the heart of every expedition.">
+            <img src="material/gallery-img-005.jfif" alt="Mountaineering expedition team" />
+
+            <div class="gallery-card-info">
+              <span>EXPEDITION</span>
+              <h4>United by Mountains</h4>
+              <p>Teamwork is at the heart of every expedition.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Image 06 — High Altitude Climb -->
+        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-aos="fade-up" data-aos-delay="500">
+          <a href="material/gallery-img-006.jfif" class="glightbox" data-gallery="mountain-gallery" data-title="Above the Clouds" data-description="The challenge of climbing through high mountain terrain.">
+            <img src="material/gallery-img-006.jfif" alt="Mountaineers climbing a steep snowy mountain" />
+            <div class="gallery-card-info">
+              <span>HIGH ALTITUDE</span>
+              <h4>Above the Clouds</h4>
+              <p>The challenge of climbing through high mountain terrain.</p>
+            </div>
+          </a>
+            
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== INFORMATIVE VIDEOS ==================== -->
+    <div class="gallery-videos">
+      <div class="gallery-subheading" data-aos="fade-up">
+        <span>02</span>
+
+        <div>
+          <h3>Informative Videos</h3>
+          <p>
+            Learn about mountaineering, climbing techniques, mountain safety
+            and expedition experiences.
+          </p>
+        </div>
+      </div>
+
+      <!-- Video Collection -->
+      <div class="video-grid row g-4">
+        <!-- Video 01 -->
+        <article class="col-12 col-md-6 col-lg-4 video-card" data-aos="fade-right">
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CSF3jgi2O90?si=ifhLpLoOwQZLoV4u"
+              title="YouTube video player" frameborder="0" allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-info">
+            <span>GUIDE</span>
+            <h4>Introduction to Mountaineering</h4>
+
+            <p>
+              Learn the fundamentals of mountaineering and what makes mountain
+              exploration challenging.
+            </p>
+          </div>
+        </article>
+
+        <!-- Video 02 -->
+        <article class="col-12 col-md-6 col-lg-4 video-card" data-aos="fade-up">
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GdvmNTZzYZ4?si=gIVM8pcc5_N60mDX"
+              title="YouTube video player" frameborder="0" allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-info">
+            <span>TECHNIQUES</span>
+            <h4>Mountain Climbing Techniques</h4>
+
+            <p>
+              Explore essential climbing techniques used by mountaineers in
+              difficult terrain.
+            </p>
+          </div>
+        </article>
+
+        <!-- Video 03 -->
+        <article class="col-12 col-md-6 col-lg-4 video-card" data-aos="fade-left">
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fi3EdNtdiV4?si=AqdnW0_lyYKLpHiF"
+              title="YouTube video player" frameborder="0" allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-info">
+            <span>SAFETY</span>
+            <h4>Mountain Safety & Preparation</h4>
+
+            <p>
+              Understand the importance of preparation, equipment and safety
+              during expeditions.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ==================== GALLERY QUOTE ==================== -->
+    <div class="gallery-quote" data-aos="zoom-in">
+      <div class="quote-line"></div>
+
+      <blockquote>
+        The mountains remind us that every summit begins with a single step.
+      </blockquote>
+
+      <p>— ALPINE ASCENTS</p>
+    </div>
+  </section>
+  <!-- ==================== END GALLERY ==================== -->
+
+  <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+  <footer class="footer" id="Contact">
+    <div class="container footer-container row g-4">
+      <!-- BRAND -->
+
+      <div class="col-12 col-sm-6 col-lg-4 footer-brand">
+        <a href="#Home" class="footer-logo">
+          <span class="logo-mark"> <img src="material/logo-img.png" alt=""> </span>
+
+
+          <span>
+            ALPINE
+            <strong>ASCENTS</strong>
+          </span>
+        </a>
+
+        <p>
+          Explore beyond limits. Discover breathtaking mountains,
+          unforgettable adventures, and the spirit of the climb.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="https://www.instagram.com/accounts/login/?hl=en" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://x.com/?lang=en" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=aC8GBmutlzM" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- EXPLORE -->
+
+      <div class="col-12 col-sm-6 col-lg-2 footer-column">
+        <h3>Explore</h3>
+
+        <ul>
+          <li> <a href="index.html#Home"> Home </a> </li>
+
+          <li> <a href="index.html#About"> About Us </a>       </li>
+
+          <li> <a href="index.html#Mountains"> Mountains </a>      </li>
+
+          <li> <a href="Records.html"> Records </a>      </li>
+
+          <li> <a href="index.html#gallery"> Gallery </a>      </li>
+        </ul>
+      </div>
+
+      <!-- EXPLORE MORE -->
+
+      <div class="col-12 col-sm-6 col-lg-2 footer-column">
+        <h3>Explore More</h3>
+
+        <ul>
+          <li> <a href="guidelines.html"> Guidelines </a>        </li>
+
+          <li> <a href="index.html#Mountains"> Mountain Types </a>        </li>
+
+          <li> <a href="index.html#Mountains"> Techniques </a>        </li>
+
+          <li> <a href="index.html#Mountains"> Sheltering </a>        </li>
+
+          <li> <a href="index.html#Mountains"> Hazards </a>        </li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+
+      <div class="col-12 col-sm-12 col-lg-4 footer-column footer-contact">
+        <h3>Contact Us</h3>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+
+          <span> Karachi, Pakistan </span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+
+          <span> +92 300 1234567 </span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+
+          <span> info@alpineascents.com </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Alpine Ascents. All Rights Reserved.</p>
+
+      <div class="footer-bottom-links">
+        <a href="#"> Privacy Policy </a>
+
+        <a href="#"> Terms & Conditions </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery 3.7 CDN  -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script>
+
+    /* =====================================================
+       MOUNTAIN SEARCH + FILTER
+    ===================================================== */
+
+    const searchInput = document.getElementById("mountainSearch");
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const mountainCards = document.querySelectorAll(".booking-card");
+    const noMountains = document.getElementById("noMountains");
+
+    let currentFilter = "all";
+
+
+    function filterMountains() {
+
+      const searchValue =
+        searchInput.value.toLowerCase().trim();
+
+      let visibleCount = 0;
+
+
+      mountainCards.forEach(card => {
+
+        const name =
+          card.dataset.name.toLowerCase();
+
+        const country =
+          card.dataset.country.toLowerCase();
+
+        const difficulty =
+          card.dataset.difficulty.toLowerCase();
+
+
+        const matchesSearch =
+          name.includes(searchValue) ||
+          country.includes(searchValue) ||
+          difficulty.includes(searchValue);
+
+
+        const matchesFilter =
+          currentFilter === "all" ||
+          card.dataset.country === currentFilter;
+
+
+        if (matchesSearch && matchesFilter) {
+
+          card.style.display = "";
+
+          visibleCount++;
+
+        } else {
+
+          card.style.display = "none";
+
+        }
+
+      });
+
+
+      if (visibleCount === 0) {
+
+        noMountains.style.display = "block";
+
+      } else {
+
+        noMountains.style.display = "none";
+
+      }
+
+    }
+
+
+    /* SEARCH */
+
+    searchInput.addEventListener(
+      "input",
+      filterMountains
+    );
+
+
+    /* FILTER BUTTONS */
+
+    filterButtons.forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn => {
+          btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        currentFilter =
+          button.dataset.filter;
+
+        filterMountains();
+
+      });
+
+    });
+
+
+    /* =====================================================
+       BOOK EXPEDITION
+    ===================================================== */
+
+    function bookMountain(mountainName) {
+
+      const message =
+        "I would like to book a mountaineering expedition for " +
+        mountainName +
+        ".";
+
+      /*
+         Later we can connect this to your
+         Contact / Booking form.
+      */
+
+      window.location.href =
+        "contact.html?mountain=" +
+        encodeURIComponent(mountainName);
+
+    }
+
+  </script>
+
+<!-- Counter Up CDN  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- way Point CDN  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!--          AOS  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 100,
+    });
+
+    $(".counter").counterUp({
+      delay: 10,
+      time: 1000,
+    });
+  </script>
+
+
+
+
+<!-- Bootstrap CDN JS 5.3  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+    <!-- Put this right before your closing </body> tag -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<!-- lightbox doesn't support .jfif  -->
+<script>
+  const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true
+  });
+</script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const intro = document.querySelector(".intro-screen");
+
+      if (!intro) return;
+
+      // Agar intro pehle hi play ho chuka hai
+      if (sessionStorage.getItem("alpineIntroPlayed") === "true") {
+
+        intro.style.display = "none";
+
+        return;
+      }
+
+      // First visit
+      intro.addEventListener("animationend", function (e) {
+
+        if (e.animationName === "introFade") {
+
+          sessionStorage.setItem("alpineIntroPlayed", "true");
+
+          intro.style.display = "none";
+        }
+
+      });
+
+    });
+  </script>
+</body>
+
+</html>
